@@ -1,4 +1,4 @@
-🗳️ Thai Election OCR — Automated Vote Extraction
+#🗳️ Thai Election OCR — Automated Vote Extraction
 📌 Project OverviewManual data entry from scanned election result documents (Form สส.6/1) is slow and prone to human error. This project implements an end-to-end pipeline to automatically extract, clean, and validate vote counts from Thai election forms using Cloud AI and fuzzy string matching.
 
 🚀 Key FeaturesTable Extraction: Utilizes Azure Document Intelligence (prebuilt-layout) to handle complex table structures and merged cells without manual coordinate tuning.Numeral Normalization: Custom engine to convert Thai numerals ($๐-๙$) to Arabic digits ($0-9$).3-Tier Fuzzy Matching: Implements a fallback matching logic (Exact → Substring → Levenshtein Distance) to reconcile OCR typos with official party name templates.Buddhist Era (B.E.) Filtering: Smart regex to distinguish between 4-digit vote counts and Buddhist years (e.g., 2566).
